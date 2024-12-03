@@ -1,0 +1,103 @@
+/* LoginPage.css */
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url('../assets/images/background3.jpg') no-repeat center center/cover;
+  color: #FF9F00; /* Orange color for text */
+  text-align: center;
+}
+
+/* LoginPage.css */
+
+.interactive-logo {
+  /* Logo will take up 50% of the available width */
+  max-width: 300px; /* But it won't get larger than 500px */
+  height: auto;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.interactive-logo:hover {
+  transform: scale(1.7); /* Increase scale factor to make the logo bigger on hover */
+  filter: drop-shadow(0 0 10px rgba(255, 165, 0, 0.6));
+}
+
+
+.login-title {
+  font-size: 5.5em;
+  margin-bottom: 20px;
+  color: #ffffff; /* Orange color for the text */
+  font-weight: bold;
+  text-shadow: 
+    0 0 5px rgba(255, 255, 0, 0.8),  /* Yellow glow effect */
+    0 0 10px rgba(255, 255, 0, 0.6),  /* Yellow outer glow */
+    0 0 15px rgba(255, 255, 0, 0.4),  /* Further yellow glow */
+    2px 2px 4px rgba(0, 0, 0, 0.3),  /* Subtle black 3D shadow */
+    4px 4px 8px rgba(0, 0, 0, 0.2);  /* Deeper black shadow */
+  letter-spacing: 1px; /* Slightly space out the letters */
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 350px;  /* Increase max-width for larger inputs */
+  margin-top: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 14px;  /* Increased padding */
+  margin: 8px 0;
+  font-size: 1.2em;  /* Larger font size for inputs */
+  border: 2px solid #FF9F00; /* Thicker border */
+  border-radius: 8px; /* Larger border radius */
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #FF6A00; /* Darker orange on focus */
+  box-shadow: 0 0 8px rgba(255, 106, 0, 0.7); /* Focus effect */
+}
+
+.login-button {
+  background-color: #ffaa00;
+  color: white;
+  font-size: 1.3em; /* Larger font size */
+  padding: 14px;
+  border: none;
+  border-radius: 8px; /* Larger button radius */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #ff0505;
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.sign-up-link {
+  margin-top: 15px;
+}
+
+.sign-up-link a {
+  color: #fc0303;
+  text-decoration: none;
+  font-size: 1.1em; /* Slightly bigger text for the link */
+}
+
+.sign-up-link a:hover {
+  text-decoration: underline;
+  font-weight: bold; /* Make the link bold on hover */
+}

@@ -1,0 +1,123 @@
+/* General Activities Log Page Layout */
+.activities-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Keep content at the top */
+    height: 100%; /* Ensure content takes the full screen */
+    background: url('../assets/images/background3.jpg') no-repeat center center/cover;
+    color: #fff;
+    overflow: hidden; /* Prevent scrollbars if the content goes over */
+  }
+  
+  
+  /* Header */
+  .header {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 3px solid #fdd835;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 2em;
+    color: #fdd835;
+  }
+  
+  /* Random Activity Section */
+  .random-activity {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px; /* Limit the width of the random activity section */
+    margin-top: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .activity-item {
+    margin: 20px;
+  }
+  
+  .activity-item h3 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #fdd835;
+  }
+  
+  .activity-item p {
+    font-size: 1.2em;
+    margin: 5px 0;
+  }
+  
+  /* Activity Log Section */
+  .log-container {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 30px;
+  }
+  
+  .status-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .status-item {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .status-item h3 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #fdd835;
+  }
+  
+  .status-item p {
+    font-size: 1.2em;
+    margin: 5px 0;
+  }
+  
+  /* Bottom Navbar */
+  .bottom-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-top: 2px solid #fdd835;
+    position: fixed;
+    bottom: 0;
+    padding: 10px 0;
+  }
+  
+  .nav-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .nav-button:hover {
+    color: #fdd835;
+  }
+  
+  .button-label {
+    font-size: 0.8em;
+    margin-top: 4px;
+  }
+  
